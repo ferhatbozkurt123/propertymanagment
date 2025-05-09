@@ -1,0 +1,6 @@
+@TasinmazYonetim.API_HostAddress = http://localhost:5098
+
+GET {{TasinmazYonetim.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

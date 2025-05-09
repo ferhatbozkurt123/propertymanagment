@@ -1,0 +1,35 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <i class="fas fa-home"></i> Ana Sayfa
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tasinmazlar" routerLinkActive="active">
+            <i class="fas fa-list"></i> Taşınmazlar
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/harita" routerLinkActive="active">
+            <i class="fas fa-map-marker-alt"></i> Harita
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ayarlar" routerLinkActive="active">
+            <i class="fas fa-cog"></i> Ayarlar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container-fluid mt-3">
+  <router-outlet></router-outlet>
+</div>

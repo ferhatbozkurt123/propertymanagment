@@ -1,0 +1,94 @@
+.map-container {
+  height: 400px;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.badge {
+  font-size: 0.85em;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+  
+  &.badge-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  &.badge-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.table {
+  th {
+    font-weight: 600;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+}
+
+.search-container {
+  margin-bottom: 1.5rem;
+  
+  .form-control {
+    max-width: 300px;
+  }
+}
+
+.detail-section {
+  p {
+    margin-bottom: 0.5rem;
+    
+    strong {
+      min-width: 100px;
+      display: inline-block;
+    }
+  }
+}
+
+.action-buttons {
+  .btn {
+    margin-right: 0.5rem;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  
+  i {
+    font-size: 0.875rem;
+  }
+}
+
+.input-group {
+  .form-control {
+    &:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
+  }
+  
+  .btn {
+    i {
+      margin-right: 0.25rem;
+    }
+  }
+} 
