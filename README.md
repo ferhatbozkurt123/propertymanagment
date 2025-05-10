@@ -1,27 +1,70 @@
-# Taşınmaz Yönetim Sistemi
+🏠 Taşınmaz Varlık Yönetim Sistemi
+Bu proje, taşınmaz (gayrimenkul) varlıkların etkin yönetimi için geliştirilmiş web tabanlı bir uygulamadır. Kullanıcılar, sisteme tanımlanan taşınmazları detaylı bir şekilde görüntüleyebilir, güncelleyebilir ve harita üzerinde konumlarını takip edebilir.
 
-Bu proje, taşınmaz (gayrimenkul) varlıkların yönetimi için geliştirilmiş bir web uygulamasıdır.
+🚀 Özellikler
+✅ Taşınmaz varlıkların listelenmesi, eklenmesi, silinmesi ve güncellenmesi
 
-## 🚀 Özellikler
+🧾 Detaylı taşınmaz bilgilerini görme (konum, tip, değer, tapu bilgisi vb.)
 
-- Taşınmaz varlıkların listelenmesi ve yönetimi
-- Detaylı taşınmaz bilgi görüntüleme
-- Kullanıcı yetkilendirme sistemi
-- Harita üzerinde taşınmaz lokasyonları
+🔐 Rol tabanlı kullanıcı yetkilendirme (Admin, Kullanıcı)
 
-## 🛠️ Teknolojiler
+🗺️ Harita üzerinden konum bazlı görüntüleme (OpenStreetMap veya Google Maps)
 
-- React.js
-- TypeScript
-- Tailwind CSS
-- Leaflet (Harita entegrasyonu için)
-- Axios (API istekleri için)
+🗂️ Taşınmazlara belge veya medya ekleyebilme (isteğe bağlı modül)
 
-## 📋 Gereksinimler
+📊 Taşınmaz değer karşılaştırması için harita bazlı karşılaştırma broşürü
 
-- Node.js (v14.0.0 veya üzeri)
-- npm veya yarn paket yöneticisi
+🛠️ Kullanılan Teknolojiler
+Backend
+.NET 7 Web API (C#)
 
+Entity Framework Core (Code First yaklaşımı)
+
+SQL Server – Veritabanı yönetimi
+
+Frontend
+Angular 15+ – SPA yapısı
+
+Tailwind CSS – Modern, hızlı stilleme
+
+Leaflet.js / Google Maps API – Harita entegrasyonu
+
+Axios – API istekleri (Angular’da HttpClient ile karşılanabilir)
+
+🧱 Mimarî Yapı
+Katmanlı mimari uygulanmıştır:
+
+API Katmanı (.NET) → HTTP endpoint’leri
+
+Business Katmanı → İş kuralları ve servisler
+
+Data Katmanı → Entity Framework ile SQL bağlantısı
+
+Angular Frontend → Kullanıcı arayüzü, komponent bazlı yapı
+
+💾 Veritabanı Yapısı
+Taşınmaz (Property)
+
+Id, Adres, İl/İlçe, Tip, Metrekare, Değer, Konum (latitude/longitude)
+
+Kullanıcı (User)
+
+Id, Ad, Email, Şifre (hashed), Rol
+
+Roller (Roles)
+
+Admin, Kullanıcı
+
+🧪 Gereksinimler
+Node.js v14.0.0 veya üzeri (Angular için)
+
+.NET SDK v7.0 veya üzeri
+
+SQL Server
+
+Paket yöneticisi olarak npm veya yarn
+
+Harita hizmeti için API anahtarı (gerekiyorsa)
 ## 💻 Kurulum
 
 1. Projeyi klonlayın:
